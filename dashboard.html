@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSAMBI Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+        <h1>🎰 MOSAMBI CASINO</h1>
+        <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <!-- Profile Card -->
+        <div class="card profile-card">
+            <div class="avatar">👤</div>
+            <h2 id="username">Player</h2>
+            <p class="member-since">Welcome back!</p>
+        </div>
+
+        <!-- Balance Card -->
+        <div class="card balance-card">
+            <h3>🪙 Balance</h3>
+            <h1 id="coins">0</h1>
+            <div class="balance-actions">
+                <button id="dailyReward">🎁 Daily Reward</button>
+            </div>
+        </div>
+
+        <!-- Quick Games Card -->
+        <div class="card games-card">
+            <h3>🎮 Games</h3>
+            <div class="games-list">
+                <button id="coinflip" class="game-btn">🪙 Coin Flip</button>
+                <button class="game-btn" onclick="location.href='crash.html'">🚀 Crash</button>
+                <button class="game-btn" disabled>🎲 Roulette <span class="soon">Soon</span></button>
+                <button class="game-btn" disabled>🎰 Slots <span class="soon">Soon</span></button>
+            </div>
+        </div>
+
+        <!-- Leaderboard Card -->
+        <div class="card leaderboard-card">
+            <h3>🏆 Leaderboard</h3>
+            <table id="leaderboardTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Coins</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>

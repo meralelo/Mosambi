@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSAMBI Crash</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 MOSAMBI CRASH</h1>
+
+    <h2>
+        Balance:
+        <span id="coins"></span> 🪙
+    </h2>
+
+    <br>
+
+    <div class="multiplier-box">
+ <canvas id="graphCanvas"></canvas>
+    <div id="rocket">
+        🚀
+    </div>
+    <span id="explosionEmoji">💥</span>
+
+    <h1 id="multiplier">
+        1.00x
+    </h1>
+
+</div>
+
+<p id="countdown"></p>
+<p id="countdown"></p>
+
+<div id="recentMultipliers"></div>
+
+    <br>
+
+    <br>
+
+    <input
+        type="number"
+        id="betAmount"
+        placeholder="Enter Bet Amount"
+        value="200"
+    >
+
+    <br><br>
+
+    <button id="betBtn">
+        🎲 Place Bet
+    </button>
+
+    <button id="cashoutBtn">
+        💰 Cash Out
+    </button>
+
+    <br><br>
+
+    <p id="status">
+        Waiting for next round...
+    </p>
+
+    <br>
+
+    <h3>Bet History</h3>
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th>Bet</th>
+                <th>Multiplier</th>
+                <th>Result</th>
+                <th>Payout</th>
+            </tr>
+        </thead>
+        <tbody id="historyBody">
+        </tbody>
+    </table>
+
+    <br>
+
+    <button onclick="window.location.href='dashboard.html'">
+        ⬅ Back
+    </button>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
